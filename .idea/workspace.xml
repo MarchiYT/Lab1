@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d1255c7-c9e7-4b1f-a253-1e01837c10b4" name="Changes" comment="Data filtering">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5d1255c7-c9e7-4b1f-a253-1e01837c10b4" name="Changes" comment="Writing to file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MarchiYT"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MarchiYT&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MarchiYT/Lab1.git",
-    "accountId": "ea3c1578-def2-4fd1-a0db-0860031b1481"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MarchiYT/Lab1.git&quot;,
+    &quot;accountId&quot;: &quot;ea3c1578-def2-4fd1-a0db-0860031b1481&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -92,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739139561965</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Writing to file">
+      <option name="closed" value="true" />
+      <created>1739169323207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739169323207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +128,7 @@
     <MESSAGE value="Project created and DataFilter created" />
     <MESSAGE value="File/line processing" />
     <MESSAGE value="Data filtering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data filtering" />
+    <MESSAGE value="Writing to file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Writing to file" />
   </component>
 </project>
