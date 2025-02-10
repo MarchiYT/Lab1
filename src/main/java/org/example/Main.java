@@ -1,17 +1,45 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how GIGA IDE suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.ArrayList;
+import java.util.List;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+
+    public static void main(String[] args) {
+        DataFilter dataFilter = new DataFilter();
+        List<String> inputFiles = new ArrayList<>();
+        boolean appendMode = false;
+        boolean fullStatistics = false;
+        String outputPath = "";
+        String prefix = "";
+
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "-o":
+                    outputPath = args[++i];
+                    break;
+                case "-p":
+                    prefix = args[++i];
+                    break;
+                case "-a":
+                    appendMode = true;
+                    break;
+                case "-s":
+                    fullStatistics = false;
+                    break;
+                case "-f":
+                    fullStatistics = true;
+                    break;
+                default:
+                    inputFiles.add(args[i]);
+                    break;
+            }
         }
+
+        dataFilter.setOutputPath(outputPath);
+        dataFilter.setPrefix(prefix);
+        dataFilter.setAppendMode(appendMode);
+        dataFilter.setFullStatistics(fullStatistics);
+        dataFilter.filterFiles(inputFiles);
     }
 }
